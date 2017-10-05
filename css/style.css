@@ -2,7 +2,44 @@
 	margin-top: 50px;
 }
 
-.article-img{
-	width: 100px;
-	height: 88px;
+.card figure{
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+}
+
+.card figure img{
+	width: 100%;
+	transform: scale(1);
+	transition: .5s;
+
+}
+
+.card figure img:hover{
+	transform: scale(1.1);
+
+}
+
+.card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+}
+
+.card-img-top {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text-bold{
+	font-weight: bold;
+}
+
+.text-italic{
+	font-style: italic;
 }

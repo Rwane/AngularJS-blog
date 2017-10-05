@@ -8,6 +8,7 @@ app.controller('MainController', ['$scope', 'article', function($scope, article)
 
 	$scope.titre= "salut ceci est mon blog";
 
+	
 	$scope.articles= [
 		{
 			title: "Tout sur node",
