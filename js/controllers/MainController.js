@@ -1,4 +1,11 @@
-app.controller('MainController', ['$scope', function($scope) {
+app.controller('MainController', ['$scope', 'article', function($scope, article) {
+	
+
+	article.done(function(data){
+		$scope.twoarticles = data;
+	})
+
+
 	$scope.titre= "salut ceci est mon blog";
 
 	$scope.articles= [

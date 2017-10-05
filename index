@@ -13,10 +13,21 @@
 	<body ng-app="agularBlogApp">
 
 	<div class="container" ng-controller="MainController">
+
 		<h1>{{ titre }}</h1>
+
 		<div class="well spacer" ng-repeat="article in articles">
-			
 			<app-info info="article"></app-info>
+		</div>
+
+		<div class="" ng-repeat="item in twoarticles">
+			<div class="well spacer row">
+
+				<h3>{{ item.title }}</h3>
+				<p>{{ item.text }}</p>
+				<span>{{ item.pseudo }}</span>
+				<img class="col-md-5" ng-src="{{ item.url_img }}">
+			</div>
 		</div>
 	</div>
 
@@ -36,7 +47,7 @@
 
     <!-- Include the AngularJS routing library -->
     	<!-- <script src="https://code.angularjs.org/1.2.28/angular-route.min.js"></script> -->
-
+    	
 		<!-- angular module -->
 		<script src="js/app.js"></script>
 
@@ -44,5 +55,7 @@
 		<script src="js/controllers/Maincontroller.js"></script> 
 		<!-- directives -->
 		<script src="js/directives/appInfo.js"></script>
+
+		<script src="js/services/articles.js"></script>
 	</body>
 </html>
