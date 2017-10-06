@@ -6,9 +6,9 @@ $pdo = new PDO('mysql:host=localhost;dbname=angularjs-blog','root','',array(PDO:
 session_start();
 
 //---chemin
-define("RACINE_SITE", $_SERVER['DOCUMENT_ROOT']."/angularBlog/angularJS-Blog/");
+define("RACINE_SITE", $_SERVER['DOCUMENT_ROOT']."/AngularJS-blog/");
 
 
 
 
-define("URL", "http://localhost/angularBlog/angularJS-Blog");
+define("URL", "http://localhost/AngularJS-blog");
